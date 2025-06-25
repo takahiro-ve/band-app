@@ -45,7 +45,6 @@ async function loadBands() {
     // 各項目をspanで分けて強調（クラスを付与）
     li.innerHTML = `
       <span class="band-name">${band.name}</span>
-      <span class="band-genre">[${band.genre}]</span><br>
       <span class="band-song">演奏曲数: ${band.song}</span>
       <span class="band-time">出演時間: ${band.genre}</span><br>
       <span class="band-leader">代表: ${band.leader}</span>
