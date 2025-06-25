@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>バンドメンバー募集</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>バンドメンバー募集</h1>
+  <section>
+    <h2>募集投稿</h2>
+    <input id="band" placeholder="バンド名・ジャンル" />
+    <input id="part" placeholder="募集パート（例：ギター、ボーカル）" />
+    <input id="contact" placeholder="連絡先（メール等）" />
+    <textarea id="message" placeholder="募集内容・条件など" rows="4"></textarea>
+    <button id="recruit-submit">募集を投稿</button>
+  </section>
+  <section>
+    <h2>募集一覧</h2>
+    <ul id="recruitList"></ul>
+  </section>
+  <nav style="text-align:center; margin: 16px 0;">
+    <a href="index.html" style="font-size:1.1em; color:#007bff; text-decoration:underline;">バンド発表会ページへ戻る</a>
+  </nav>
+  <script type="module" src="recruit.js"></script>
+</body>
+</html>
