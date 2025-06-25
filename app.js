@@ -64,3 +64,5 @@ async function loadBands() {
 }
 
 loadBands(); // 初期読み込み
+
+
