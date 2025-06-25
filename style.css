@@ -12,25 +12,25 @@ h1 {
   padding: 24px 0 16px 0;
   text-align: center;
   letter-spacing: 0.1em;
-  font-size: 1.5em;
+  font-size: 1.7em;
 }
 
 section {
   background: #fff;
-  margin: 24px auto;
-  padding: 16px 8px;
+  margin: 28px auto;
+  padding: 20px 12px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.06);
   max-width: 480px;
-  width: 95vw;
+  width: 96vw;
 }
 
 input {
-  margin: 4px 0 12px 0;
-  padding: 10px 12px;
+  margin: 6px 0 14px 0;
+  padding: 14px 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  font-size: 1em;
+  font-size: 1.1em;
   width: 100%;
   box-sizing: border-box;
   display: block;
@@ -41,12 +41,12 @@ button#submit {
   color: #fff;
   border: none;
   border-radius: 4px;
-  padding: 10px 0;
-  font-size: 1em;
+  padding: 14px 0;
+  font-size: 1.1em;
   cursor: pointer;
   transition: background 0.2s;
   width: 100%;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 button#submit:hover {
   background: #0056b3;
@@ -58,14 +58,14 @@ button#submit:hover {
   margin: 0;
 }
 #bandList li {
-  margin-bottom: 8px;
-  padding: 8px 0;
+  margin-bottom: 10px;
+  padding: 10px 0;
   border-bottom: 1px solid #eee;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  font-size: 1em;
+  font-size: 1.05em;
 }
 #bandList li span {
   flex: 1 1 60%;
@@ -79,7 +79,7 @@ button#submit:hover {
   background: #d9534f;
   border: none;
   border-radius: 4px;
-  padding: 6px 16px;
+  padding: 10px 20px;
   cursor: pointer;
   transition: background 0.2s;
   font-size: 1em;
@@ -91,27 +91,28 @@ button#submit:hover {
 
 @media (max-width: 600px) {
   h1 {
-    font-size: 1.1em;
-    padding: 16px 0 10px 0;
+    font-size: 1.2em;
+    padding: 14px 0 8px 0;
   }
   section {
-    margin: 12px auto;
-    padding: 10px 2vw;
-    max-width: 98vw;
+    margin: 8px auto;
+    padding: 8px 2vw;
+    max-width: 99vw;
   }
   input, button#submit {
     font-size: 1em;
-    padding: 10px 0;
+    padding: 14px 0;
   }
   #bandList li {
     flex-direction: column;
     align-items: flex-start;
-    font-size: 0.98em;
+    font-size: 1em;
+    padding: 12px 0;
   }
   #bandList button {
     width: 100%;
-    margin-top: 6px;
-    padding: 8px 0;
+    margin-top: 8px;
+    padding: 12px 0;
     font-size: 1em;
   }
 }
