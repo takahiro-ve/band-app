@@ -12,23 +12,28 @@ h1 {
   padding: 24px 0 16px 0;
   text-align: center;
   letter-spacing: 0.1em;
+  font-size: 1.5em;
 }
 
 section {
   background: #fff;
-  margin: 32px auto;
-  padding: 24px 32px;
+  margin: 24px auto;
+  padding: 16px 8px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.06);
   max-width: 480px;
+  width: 95vw;
 }
 
 input {
-  margin: 4px 8px 12px 0;
-  padding: 6px 10px;
+  margin: 4px 0 12px 0;
+  padding: 10px 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 1em;
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
 }
 
 button#submit {
@@ -36,10 +41,12 @@ button#submit {
   color: #fff;
   border: none;
   border-radius: 4px;
-  padding: 6px 16px;
+  padding: 10px 0;
   font-size: 1em;
   cursor: pointer;
   transition: background 0.2s;
+  width: 100%;
+  margin-bottom: 8px;
 }
 button#submit:hover {
   background: #0056b3;
@@ -57,17 +64,54 @@ button#submit:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 1em;
+}
+#bandList li span {
+  flex: 1 1 60%;
+  min-width: 120px;
+  word-break: break-all;
 }
 #bandList button {
-  margin-left: 12px;
+  margin-left: 0;
+  margin-top: 8px;
   color: #fff;
   background: #d9534f;
   border: none;
   border-radius: 4px;
-  padding: 2px 8px;
+  padding: 6px 16px;
   cursor: pointer;
   transition: background 0.2s;
+  font-size: 1em;
+  flex: 0 0 auto;
 }
 #bandList button:hover {
   background: #c9302c;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.1em;
+    padding: 16px 0 10px 0;
+  }
+  section {
+    margin: 12px auto;
+    padding: 10px 2vw;
+    max-width: 98vw;
+  }
+  input, button#submit {
+    font-size: 1em;
+    padding: 10px 0;
+  }
+  #bandList li {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 0.98em;
+  }
+  #bandList button {
+    width: 100%;
+    margin-top: 6px;
+    padding: 8px 0;
+    font-size: 1em;
+  }
 }
