@@ -89,6 +89,25 @@ button#submit:hover {
   background: #c9302c;
 }
 
+.band-name {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.band-genre {
+  margin-left: 8px;
+  color: #555;
+}
+.band-song {
+  color: #333;
+}
+.band-time {
+  margin-left: 12px;
+  color: #888;
+}
+.band-leader {
+  color: #007bff;
+}
+
 @media (max-width: 600px) {
   h1 {
     font-size: 1.2em;

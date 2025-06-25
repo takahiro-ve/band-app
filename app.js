@@ -41,9 +41,17 @@ async function loadBands() {
 
   data.forEach(band => {
     const li = document.createElement('li');
-    li.textContent = `${band.name}（${band.genre}） - ${band.song} ／ 代表：${band.leader}`;
 
-    // 削除ボタンを追加
+    // 各項目をspanで分けて強調（クラスを付与）
+    li.innerHTML = `
+      <span class="band-name">${band.name}</span>
+      <span class="band-genre">[${band.genre}]</span><br>
+      <span class="band-song">演奏曲数: ${band.song}</span>
+      <span class="band-time">出演時間: ${band.genre}</span><br>
+      <span class="band-leader">代表: ${band.leader}</span>
+    `;
+
+    // 削除ボタン
     const deleteBtn = document.createElement('button');
     deleteBtn.textContent = '削除';
     deleteBtn.style.marginLeft = '12px';
