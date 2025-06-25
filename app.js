@@ -42,6 +42,23 @@ async function loadBands() {
   data.forEach(band => {
     const li = document.createElement('li');
     li.textContent = `${band.name}（${band.genre}） - ${band.song} ／ 代表：${band.leader}`;
+
+    // 削除ボタンを追加
+    const deleteBtn = document.createElement('button');
+    deleteBtn.textContent = '削除';
+    deleteBtn.style.marginLeft = '12px';
+    deleteBtn.onclick = async () => {
+      if (confirm(`「${band.name}」を削除しますか？`)) {
+        const { error } = await supabase.from('bands').delete().eq('id', band.id);
+        if (error) {
+          alert('削除に失敗しました: ' + error.message);
+        } else {
+          loadBands();
+        }
+      }
+    };
+
+    li.appendChild(deleteBtn);
     list.appendChild(li);
   });
 }
