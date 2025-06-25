@@ -13,20 +13,32 @@
     <h2>バンド作成</h2>
     <input id="name" placeholder="バンド名" />
     <input id="leader" placeholder="代表者名" />
-    <input id="genre" placeholder="出演時間" />
+    <input id="time" placeholder="出演時間" />
     <input id="song" placeholder="演奏曲数" />
     <button id="submit">作成</button>
   </section>
 
   <section>
     <h2>出演バンド一覧</h2>
-    <ul id="bandList"></ul>
+    <ul id="bandList">
+      <!--
+        app.jsで各バンドが以下のような構造で表示されます
+        <li>
+          <span class="band-name">バンド名</span>
+          <span class="band-genre">[ジャンル]</span><br>
+          <span class="band-song">演奏曲数: 曲数</span>
+          <span class="band-time">出演時間: 時間</span><br>
+          <span class="band-leader">代表: 代表者名</span>
+          <button>削除</button>
+        </li>
+      -->
+    </ul>
   </section>
 
   <script type="module" src="app.js"></script>
   <nav style="text-align:center; margin: 16px 0;">
-  <a href="recruit.html" style="font-size:1.1em; color:#007bff; text-decoration:underline;">バンドメンバー募集はこちら</a>
-</nav>
+    <a href="recruit.html" style="font-size:1.1em; color:#007bff; text-decoration:underline;">バンドメンバー募集はこちら</a>
+  </nav>
 </body>
 </html>
 
