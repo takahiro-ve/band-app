@@ -10,13 +10,13 @@ const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 document.getElementById('submit').addEventListener('click', async () => {
   const name = document.getElementById('name').value;
   const leader = document.getElementById('leader').value;
-  const genre = document.getElementById('genre').value;
+  const time = document.getElementById('time').value;
   const song = document.getElementById('song').value;
 
   if (!name || !leader) return alert("バンド名と代表者名は必須です");
 
   const { error } = await supabase.from('bands').insert([
-    { name, leader, genre, song }
+    { name, leader, time, song }
   ]);
 
   if (error) {
@@ -46,7 +46,7 @@ async function loadBands() {
     li.innerHTML = `
       <span class="band-name">${band.name}</span>
       <span class="band-song">演奏曲数: ${band.song}</span>
-      <span class="band-time">出演時間: ${band.genre}</span><br>
+      <span class="band-time">出演時間: ${band.time}</span><br>
       <span class="band-leader">代表: ${band.leader}</span>
     `;
 
